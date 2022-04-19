@@ -7,8 +7,19 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+st.session_state['answer'] = ''!
 
-# In[139]:
+st.write(st.session_state)
+
+realans = ['', 'abc', 'edf']
+
+if  st.session_state['answer'] in realans:
+    answerStat = "correct"
+elif st.session_state['answer'] not in realans:
+    answerStat = "incorrect"
+
+st.write(st.session_state)
+st.write(answerStat)
 
 
 delivery=pd.read_csv(r"E:\\Data Science\\Project\Machine Learning\\IPL\\SE\\deliveries.csv",encoding= 'unicode_escape')
