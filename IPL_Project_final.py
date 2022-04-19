@@ -7,6 +7,14 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+mkdir -p ~/.streamlit/
+echo "\
+[server]\n\
+headless = true\n\
+port = $PORT\n\
+enableCORS = false\n\
+\n\
+" > ~/.streamlit/config.toml
 
 delivery=pd.read_csv(r"E:\\Data Science\\Project\Machine Learning\\IPL\\SE\\deliveries.csv",encoding= 'unicode_escape')
 delivery.head()
