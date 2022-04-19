@@ -11,7 +11,7 @@ import numpy as np
 # In[139]:
 
 
-delivery=pd.read_csv("E:\Data Science\Project\Machine Learning\IPL\SE\deliveries.csv")
+delivery=pd.read_csv(r"E:\Data Science\Project\Machine Learning\IPL\SE\deliveries.csv",encoding= 'unicode_escape')
 delivery.head()
 
 
