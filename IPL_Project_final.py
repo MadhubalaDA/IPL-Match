@@ -7,6 +7,13 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+echo "# IPL-Match" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/MadhubalaDA/IPL-Match.git
+git push -u origin master
 
 delivery=pd.read_csv(r"E:\\Data Science\\Project\Machine Learning\\IPL\\SE\\deliveries.csv",encoding= 'unicode_escape')
 delivery.head()
