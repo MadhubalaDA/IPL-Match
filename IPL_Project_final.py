@@ -7,7 +7,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-echo "# IPL-Match" >> README.md
+echo "IPL-Match" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
